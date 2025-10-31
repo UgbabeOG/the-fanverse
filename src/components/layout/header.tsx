@@ -1,4 +1,5 @@
 
+
 "use client";
 
 import Link from "next/link";
@@ -6,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { Menu, Newspaper, Home, Info, ShoppingBag, LogIn, UserPlus } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/logo";
 
@@ -53,6 +54,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
+              <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
               <div className="flex flex-col h-full">
                 <div className="border-b pb-4">
                   <Link href="/" className="flex items-center space-x-2">
