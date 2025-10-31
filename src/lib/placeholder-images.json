@@ -2,67 +2,67 @@
   "placeholderImages": [
     {
       "id": "hero-1",
-      "description": "A vibrant concert with a cheering crowd.",
-      "imageUrl": "https://images.unsplash.com/photo-1493308903033-e622ac815e5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb25jZXJ0JTIwY3Jvd2R8ZW58MHx8fHwxNzYxODQyMDI1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "concert crowd"
+      "description": "A vibrant football stadium with a cheering crowd.",
+      "imageUrl": "https://images.unsplash.com/photo-1515523110800-9415d13b84a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb290YmFsbCUyMHN0YWRpdW18ZW58MHx8fHwxNzYxOTgxMTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "football stadium"
     },
     {
       "id": "about-celeb",
-      "description": "A professional headshot of the celebrity.",
-      "imageUrl": "https://images.unsplash.com/photo-1746961158538-c0479758deb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2VsZWJyaXR5JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYxOTE4NzAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "celebrity portrait"
+      "description": "A professional portrait of the football player.",
+      "imageUrl": "https://images.unsplash.com/photo-1544299991-3f1a04917f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbCUyMHBsYXllciUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjAwNTU4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "football player"
     },
     {
       "id": "post-1",
-      "description": "Celebrity on a red carpet.",
+      "description": "Football player receiving an award on stage.",
       "imageUrl": "https://images.unsplash.com/photo-1614080035039-af24354a6478?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWQlMjBjYXJwZXR8ZW58MHx8fHwxNzYxODE4NDQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "red carpet"
+      "imageHint": "sports award"
     },
     {
       "id": "post-2",
-      "description": "A still from a music video.",
-      "imageUrl": "https://images.unsplash.com/photo-1574712255212-0096899dc0bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bXVzaWMlMjB2aWRlb3xlbnwwfHx8fDE3NjE5MjQ5NzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "music video"
+      "description": "Football players celebrating a goal in a packed stadium.",
+      "imageUrl": "https://images.unsplash.com/photo-1588198640733-d9345c083427?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmb290YmFsbCUyMGNlbGVicmF0aW9ufGVufDB8fHx8MTc2MjAwNjA0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "football celebration"
     },
     {
       "id": "post-3",
-      "description": "Celebrity laughing in an interview.",
+      "description": "Football player laughing at a press conference.",
       "imageUrl": "https://images.unsplash.com/photo-1759659334772-c3a05b8178e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjZWxlYnJpdHklMjBpbnRlcnZpZXd8ZW58MHx8fHwxNzYxOTMwMDk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "celebrity interview"
+      "imageHint": "press conference"
     },
     {
       "id": "post-4",
-      "description": "Behind the scenes of a photoshoot.",
-      "imageUrl": "https://images.unsplash.com/photo-1691491918178-8a2e68b44919?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWhpbmQlMjBzY2VuZXN8ZW58MHx8fHwxNzYxOTMwMDk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "behind scenes"
+      "description": "Football player during an intense training session.",
+      "imageUrl": "https://images.unsplash.com/photo-1594464405386-8712a6a69317?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb290YmFsbCUyMHRyYWluaW5nfGVufDB8fHx8MTc2MjAwNjI0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "football training"
     },
     {
       "id": "post-5",
-      "description": "Celebrity performing on stage.",
-      "imageUrl": "https://images.unsplash.com/photo-1606819813301-c47338f20940?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3RhZ2UlMjBwZXJmb3JtYW5jZXxlbnwwfHx8fDE3NjE4MzAwOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "stage performance"
+      "description": "A collection of fan art drawings of the football player.",
+      "imageUrl": "https://images.unsplash.com/photo-1593113598332-cd288d649433?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYW4lMjBhcnR8ZW58MHx8fHwxNzYyMDA2MzIyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fan art"
     },
     {
       "id": "merch-1",
-      "description": "A black t-shirt with a cool design.",
-      "imageUrl": "https://images.unsplash.com/photo-1759572095384-1a7e646d0d4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0LXNoaXJ0fGVufDB8fHx8MTc2MTg3NjEwMXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "t-shirt"
+      "description": "A modern football jersey on a mannequin.",
+      "imageUrl": "https://images.unsplash.com/photo-1599408662493-277579c855a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbCUyMGplcnNleXxlbnwwfHx8fDE3NjIwMDY0NTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "football jersey"
     },
     {
       "id": "merch-2",
-      "description": "A branded baseball cap.",
-      "imageUrl": "https://images.unsplash.com/photo-1572994631587-b3b33b849ebd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiYXNlYmFsbCUyMGNhcHxlbnwwfHx8fDE3NjE4MjY3Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "baseball cap"
+      "description": "A football team scarf.",
+      "imageUrl": "https://images.unsplash.com/photo-1627933939634-714577de1472?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbCUyMHNjYXJmfGVufDB8fHx8MTc2MjAwNjQ5NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "football scarf"
     },
     {
       "id": "merch-3",
-      "description": "A poster of the celebrity.",
+      "description": "A signed action photo of the football player.",
       "imageUrl": "https://images.unsplash.com/photo-1717116068406-34bae9ff5816?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjZWxlYnJpdHklMjBwb3N0ZXJ8ZW58MHx8fHwxNzYxOTMwMDk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "celebrity poster"
+      "imageHint": "signed photo"
     },
     {
       "id": "merch-4",
-      "description": "A coffee mug with a logo.",
+      "description": "A coffee mug with a football goal print.",
       "imageUrl": "https://images.unsplash.com/photo-1616241673111-508b4662c707?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb2ZmZWUlMjBtdWd8ZW58MHx8fHwxNzYxODQ2MjQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "coffee mug"
     },

@@ -1,3 +1,4 @@
+
 export type User = {
   id: string;
   name: string;
@@ -44,31 +45,31 @@ export const users: User[] = [
 
 export const categories: Category[] = [
   { id: "cat-1", name: "Latest News" },
-  { id: "cat-2", name: "Music" },
-  { id: "cat-3", name: "Style" },
-  { id: "cat-4", name: "Fan Creations" },
+  { id: "cat-2", name: "Match Day" },
+  { id: "cat-3", name: "Training Ground" },
+  { id: "cat-4", name: "Fan Zone" },
 ];
 
 export const posts: Post[] = [
   {
     id: "post-1",
-    title: "A Night to Remember: Red Carpet Glamour",
-    slug: "red-carpet-glamour",
-    content: "The star dazzled on the red carpet last night, wearing a stunning custom-made gown that captured everyone's attention. This post breaks down the entire look, from the dress to the accessories, and gives you the inside scoop on the designers.",
+    title: "A Night to Remember: Awards Gala Glamour",
+    slug: "awards-gala-glamour",
+    content: "The star was honored at the annual sports awards last night, looking sharp in a custom suit. This post breaks down the event, the award, and the look.",
     imageId: "post-1",
     authorId: "user-1",
-    categoryId: "cat-3",
+    categoryId: "cat-1",
     createdAt: "2024-07-20T10:00:00Z",
     comments: [
-      { id: "comment-1", text: "Absolutely breathtaking! Best dressed of the night for sure.", authorId: "user-2", createdAt: "2024-07-20T11:30:00Z" },
-      { id: "comment-2", text: "I need to know who did the makeup, it was flawless!", authorId: "user-3", createdAt: "2024-07-20T12:15:00Z" },
+      { id: "comment-1", text: "Absolutely well deserved! A true champion.", authorId: "user-2", createdAt: "2024-07-20T11:30:00Z" },
+      { id: "comment-2", text: "Looking sharp! Congrats on the win!", authorId: "user-3", createdAt: "2024-07-20T12:15:00Z" },
     ],
   },
   {
     id: "post-2",
-    title: "New Single 'Midnight Echo' Drops Friday!",
-    slug: "new-single-midnight-echo",
-    content: "Get ready! The highly anticipated new single, 'Midnight Echo', is set to release this Friday. We've got an exclusive sneak peek into the music video and a few words from the artist about the inspiration behind the track. The countdown begins now!",
+    title: "Derby Day Victory: A Match to Remember",
+    slug: "derby-day-victory",
+    content: "An incredible performance in today's derby match secured a crucial victory. We'll break down the key moments, including the game-winning goal. The atmosphere was electric!",
     imageId: "post-2",
     authorId: "user-2",
     categoryId: "cat-2",
@@ -77,9 +78,9 @@ export const posts: Post[] = [
   },
   {
     id: "post-3",
-    title: "Candid Moments: A Look Back at the Funniest Interviews",
-    slug: "funniest-interviews",
-    content: "Our favorite star is known for their incredible talent, but also for their amazing sense of humor. We've compiled a list of the most hilarious and heartwarming moments from past interviews. Get ready to laugh!",
+    title: "Candid Moments: A Look Back at the Funniest Press Conferences",
+    slug: "funniest-press-conferences",
+    content: "Our favorite star is known for their incredible skill on the pitch, but also for their great sense of humor. We've compiled a list of the most hilarious and heartwarming moments from past press conferences. Get ready to laugh!",
     imageId: "post-3",
     authorId: "user-1",
     categoryId: "cat-1",
@@ -90,33 +91,33 @@ export const posts: Post[] = [
   },
   {
     id: "post-4",
-    title: "Behind the Lens: The Making of the Latest Album Cover",
-    slug: "album-cover-bts",
-    content: "Ever wondered what goes into creating an iconic album cover? We take you behind the scenes of the photoshoot for the latest album. See exclusive photos and learn about the creative process from the photographer and stylist.",
+    title: "Pre-Season Prep: Pushing the Limits",
+    slug: "pre-season-prep",
+    content: "Ever wondered what a top athlete's pre-season training looks like? We take you behind the scenes of the intense drills and gym sessions. See exclusive photos and learn about the dedication it takes to stay at the top.",
     imageId: "post-4",
     authorId: "user-3",
-    categoryId: "cat-4",
+    categoryId: "cat-3",
     createdAt: "2024-07-17T18:00:00Z",
     comments: [],
   },
    {
     id: "post-5",
-    title: "Live in Concert: A Spectacle of Light and Sound",
-    slug: "live-in-concert-review",
-    content: "The world tour is in full swing, and we were there for the opening night. Read our full review of the concert, from the electrifying performances to the stunning stage design. It's a show you don't want to miss!",
+    title: "Fan Art Showcase: Our Favorite Creations This Month",
+    slug: "fan-art-showcase",
+    content: "The creativity in this community is amazing! We're showcasing some of the best fan art submitted this month. From incredible portraits to hilarious comics, you all are incredibly talented. Keep them coming!",
     imageId: "post-5",
     authorId: "user-2",
-    categoryId: "cat-2",
+    categoryId: "cat-4",
     createdAt: "2024-07-16T22:00:00Z",
     comments: [
-      { id: "comment-4", text: "I was there! It was the best night of my life.", authorId: "user-1", createdAt: "2024-07-17T08:00:00Z" },
+      { id: "comment-4", text: "So cool to see my drawing featured! Thanks!", authorId: "user-1", createdAt: "2024-07-17T08:00:00Z" },
     ],
   },
 ];
 
 export const merchandise: Merchandise[] = [
-  { id: "merch-1", name: "Official Tour T-Shirt", price: 35.00, imageId: "merch-1", description: "High-quality cotton t-shirt featuring the official tour design. Available in all sizes." },
-  { id: "merch-2", name: "'FanVerse' Logo Cap", price: 25.00, imageId: "merch-2", description: "Stylish and comfortable baseball cap with an embroidered logo. One size fits all." },
-  { id: "merch-3", name: "Limited Edition Signed Poster", price: 75.00, imageId: "merch-3", description: "A beautifully designed poster, hand-signed by the star. A true collector's item." },
-  { id: "merch-4", name: "'Midnight Echo' Mug", price: 18.00, imageId: "merch-4", description: "Start your day right with this ceramic mug featuring artwork from the new single." },
+  { id: "merch-1", name: "Official Home Kit 24/25", price: 90.00, imageId: "merch-1", description: "The official home jersey for the new season. Lightweight, breathable fabric. Available in all sizes." },
+  { id: "merch-2", name: "'FanVerse' Team Scarf", price: 25.00, imageId: "merch-2", description: "Classic knit scarf with team colors and embroidered logo. Perfect for match day." },
+  { id: "merch-3", name: "Limited Edition Signed Photo", price: 75.00, imageId: "merch-3", description: "A high-quality action shot, hand-signed by the star. A true collector's item." },
+  { id: "merch-4", name: "'Goal!' Mug", price: 18.00, imageId: "merch-4", description: "Start your day right with this ceramic mug celebrating a legendary goal." },
 ];
