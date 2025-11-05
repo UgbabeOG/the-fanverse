@@ -1,10 +1,12 @@
 import Link from "next/link";
+import { Logo } from "@/components/logo";
 
 export function Footer() {
   return (
     <footer className="w-full border-t border-border/40 bg-background/95">
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center justify-center gap-4 text-center">
+          <Logo />
           <p className="text-sm text-muted-foreground">
             This is the official fan community for Isiah Pacheco.
           </p>
