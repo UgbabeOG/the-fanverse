@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Star } from "lucide-react";
@@ -29,6 +30,9 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg">
             Welcome to Pacheco Team
           </h1>
+          <p className="text-2xl md:text-3xl font-headline font-bold text-accent drop-shadow-lg mt-2">
+            Where Passion Meets Purpose.
+          </p>
           <p className="mt-4 text-lg md:text-xl max-w-2xl drop-shadow-md">
             The official fan community celebrating Isiah Pacheco’s drive, discipline, and heart. Built for those who believe in the journey, and the fans who make it possible.
           </p>
