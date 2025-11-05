@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight, Star, KeyRound, Gift, Crown } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -11,6 +11,24 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 export default function Home() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-1');
   const recentPosts = posts.slice(0, 3);
+
+  const fanExperienceFeatures = [
+    {
+      icon: <KeyRound className="h-10 w-10 text-primary" />,
+      title: "Exclusive Access",
+      description: "Unlock members-only content, Q&As, and behind-the-scenes footage.",
+    },
+    {
+      icon: <Gift className="h-10 w-10 text-primary" />,
+      title: "Giveaways",
+      description: "Enter to win tickets, signed memorabilia, and unique fan experiences.",
+    },
+    {
+      icon: <Crown className="h-10 w-10 text-primary" />,
+      title: "Inner Circle",
+      description: "Get priority access to new merchandise drops and special announcements.",
+    },
+  ];
 
   return (
     <div className="flex flex-col">
@@ -96,6 +114,31 @@ export default function Home() {
           <div className="text-center mt-12">
             <Button asChild size="lg" variant="outline">
               <Link href="/posts">View all Highlights</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 md:py-20 bg-background">
+        <div className="container mx-auto px-4 text-center">
+           <h2 className="text-3xl md:text-4xl font-headline font-bold">Fan Experience</h2>
+          <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
+            Connect. Celebrate. Win.
+          </p>
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            {fanExperienceFeatures.map((feature) => (
+              <div key={feature.title} className="flex flex-col items-center">
+                {feature.icon}
+                <h3 className="mt-4 text-xl font-bold">{feature.title}</h3>
+                <p className="mt-2 text-muted-foreground">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12">
+            <Button asChild size="lg" className="animate-pulse">
+              <Link href="/membership">
+                Join the Community
+              </Link>
             </Button>
           </div>
         </div>
