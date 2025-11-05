@@ -7,8 +7,8 @@ import { Toaster } from "@/components/ui/toaster"
 
 
 export const metadata: Metadata = {
-  title: 'FanVerse',
-  description: 'An engaging fan blog app designed for community and content sharing.',
+  title: 'Pacheco Team',
+  description: 'The official fan hub for Pacheco. Join the team!',
 };
 
 export default function RootLayout({

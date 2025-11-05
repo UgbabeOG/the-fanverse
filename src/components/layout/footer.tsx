@@ -11,7 +11,7 @@ export function Footer() {
             <Logo />
           </div>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} FanVerse. All Rights Reserved.
+            © {new Date().getFullYear()} Pacheco Team. All Rights Reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">

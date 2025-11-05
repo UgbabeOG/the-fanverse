@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -27,16 +27,23 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         <div className="relative h-full flex flex-col items-center justify-center text-center text-white p-4">
           <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg">
-            Welcome to FanVerse
+            Welcome to Pacheco Team
           </h1>
           <p className="mt-4 text-lg md:text-xl max-w-2xl drop-shadow-md">
             Your ultimate hub for all things our favorite star. Dive into the latest news, discussions, and community creations.
           </p>
-          <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
-            <Link href="/posts">
-              Explore Posts <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+              <Link href="/posts">
+                Latest Highlights <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
+              <Link href="/membership">
+                Join Us <Star className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
 

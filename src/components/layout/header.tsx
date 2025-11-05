@@ -4,7 +4,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, Newspaper, Home, Info, ShoppingBag, LogIn, UserPlus } from "lucide-react";
+import { Menu, Newspaper, Home, Info, ShoppingBag, LogIn, UserPlus, Star } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet";
@@ -15,6 +15,7 @@ const navLinks = [
   { href: "/", label: "Home", icon: Home },
   { href: "/posts", label: "Posts", icon: Newspaper },
   { href: "/merchandise", label: "Merchandise", icon: ShoppingBag },
+  { href: "/membership", label: "Membership", icon: Star },
   { href: "/about", label: "About", icon: Info },
 ];
 
