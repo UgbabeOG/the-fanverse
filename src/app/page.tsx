@@ -38,7 +38,7 @@ export default function Home() {
                 Latest Highlights <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black">
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black animate-pulse">
               <Link href="/membership">
                 Join Us <Star className="ml-2 h-5 w-5" />
               </Link>
