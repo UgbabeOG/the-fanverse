@@ -100,6 +100,24 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="py-12 md:py-20 bg-card">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-headline font-bold mb-4">
+            Join the Family.
+          </h2>
+          <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
+            Become part of the story. Unlock exclusive content, livestream invites, and rewards.
+          </p>
+          <div className="mt-8">
+            <Button asChild size="lg">
+              <Link href="/membership">
+                Join Us <Star className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
