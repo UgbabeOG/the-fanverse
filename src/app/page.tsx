@@ -30,7 +30,7 @@ export default function Home() {
             Welcome to Pacheco Team
           </h1>
           <p className="mt-4 text-lg md:text-xl max-w-2xl drop-shadow-md">
-            Your ultimate hub for all things our favorite star. Dive into the latest news, discussions, and community creations.
+            The official fan community celebrating Isiah Pacheco’s drive, discipline, and heart. Built for those who believe in the journey, and the fans who make it possible.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
