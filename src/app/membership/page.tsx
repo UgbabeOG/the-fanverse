@@ -1,12 +1,64 @@
 
-import { CheckCircle, Star, Mail, Shield, Lock } from 'lucide-react';
+'use client';
+
+import { CheckCircle, Star, Mail, Shield, Lock, Gift } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import Link from 'next/link';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { useToast } from '@/hooks/use-toast';
+import { Separator } from '@/components/ui/separator';
+
 
 const managementEmail = "info@pachecofans.com";
 const emailSubject = "Inquiry: Trust Access Pass Membership";
 const emailBody = "Hello, I am interested in joining the Trust Access Pass. Please provide me with the next steps to complete my membership.";
+
+function RaffleForm() {
+  const { toast } = useToast();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name");
+    const email = formData.get("email");
+
+    if (name && email) {
+      console.log({ name, email });
+      toast({
+        title: "Raffle Entry Submitted!",
+        description: "Thank you for entering. Winners will be contacted directly.",
+      });
+      e.currentTarget.reset();
+    } else {
+      toast({
+        title: "Incomplete Form",
+        description: "Please fill out all fields.",
+        variant: "destructive",
+      });
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <div className="space-y-2">
+        <Label htmlFor="name">Full Name</Label>
+        <Input id="name" name="name" placeholder="Your Name" required />
+      </div>
+      <div className="space-y-2">
+        <Label htmlFor="email">Email Address</Label>
+        <Input id="email" name="email" type="email" placeholder="you@example.com" required />
+      </div>
+      <Button type="submit" className="w-full">
+        Enter Raffle
+      </Button>
+      <p className="text-xs text-center text-muted-foreground pt-2">
+        Fill out the form above and comment ‘Form Filled’ when you’re done.
+      </p>
+    </form>
+  );
+}
+
 
 export default function MembershipPage() {
   return (
@@ -79,8 +131,46 @@ export default function MembershipPage() {
               </Button>
           </CardFooter>
         </Card>
-
       </div>
+
+      <Separator className="my-12 md:my-20" />
+
+      <div className="max-w-4xl mx-auto">
+        <Card className="bg-card/50">
+          <CardHeader>
+             <CardTitle className="text-3xl font-headline flex items-center gap-3">
+              <Gift className="h-8 w-8 text-primary" />
+               FAN EXPERIENCES / TICKET GIVEAWAYS
+            </CardTitle>
+             <CardDescription className="text-lg pt-2">
+               Your Chance to Join Us Live at GEHA Field, And away Games
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+              <div className="space-y-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  We love giving back to the fans who give us everything. Enter our official raffle for upcoming games — Chiefs vs Commanders (Oct 27) or Chiefs vs Bills (Nov 23).
+                </p>
+                 <p className="text-muted-foreground leading-relaxed">
+                  Winners will be contacted directly by Team Pacheco Management.
+                </p>
+              </div>
+              <div>
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-xl">Raffle Entry</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <RaffleForm />
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
     </div>
   );
 }
