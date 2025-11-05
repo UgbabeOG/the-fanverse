@@ -47,7 +47,7 @@ export default function ContactPage() {
                 <Mail className="h-6 w-6 text-primary" />
                 <a href="mailto:info@pachecofans.com" className="hover:underline">info@pachecofans.com</a>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 animate-pulse">
                 <WhatsAppIcon className="h-6 w-6 text-primary" />
                 <a href="https://wa.me/message/AVT6KRU65SQKE1" target="_blank" rel="noopener noreferrer" className="hover:underline">Contact us on WhatsApp</a>
               </div>
