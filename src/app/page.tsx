@@ -95,7 +95,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
             <Button asChild size="lg" variant="outline">
-              <Link href="/posts">View All Posts</Link>
+              <Link href="/posts">View all Highlights</Link>
             </Button>
           </div>
         </div>

@@ -11,7 +11,7 @@ import { Logo } from "@/components/logo";
 
 const navLinks = [
   { href: "/", label: "Home", icon: Home },
-  { href: "/posts", label: "Posts", icon: Newspaper },
+  { href: "/posts", label: "Highlights", icon: Newspaper },
   { href: "/merchandise", label: "Merchandise", icon: ShoppingBag },
   { href: "/membership", label: "Membership", icon: Star },
   { href: "/about", label: "About", icon: Info },

@@ -33,7 +33,7 @@ export default function PostsPage() {
           onClick={() => setSelectedCategory(null)}
           className="rounded-full"
         >
-          All Posts
+          All Highlights
         </Button>
         {categories.map((category) => (
           <Button
