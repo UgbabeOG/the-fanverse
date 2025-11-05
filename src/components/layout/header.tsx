@@ -1,10 +1,8 @@
-
-
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, Newspaper, Home, Info, ShoppingBag, LogIn, UserPlus, Star } from "lucide-react";
+import { Menu, Newspaper, Home, Info, ShoppingBag, LogIn, UserPlus, Star, Mail } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet";
@@ -17,6 +15,7 @@ const navLinks = [
   { href: "/merchandise", label: "Merchandise", icon: ShoppingBag },
   { href: "/membership", label: "Membership", icon: Star },
   { href: "/about", label: "About", icon: Info },
+  { href: "/contact", label: "Contact", icon: Mail },
 ];
 
 export function Header() {
@@ -55,7 +54,9 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
-              <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+              <SheetClose asChild>
+                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+              </SheetClose>
               <div className="flex flex-col h-full">
                 <div className="border-b pb-4">
                   <Link href="/" className="flex items-center space-x-2">

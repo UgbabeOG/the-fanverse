@@ -15,7 +15,7 @@ export function Footer() {
             <span>|</span>
             <Link href="/membership" className="hover:text-primary transition-colors">Membership</Link>
             <span>|</span>
-            <Link href="/merchandise" className="hover:text-primary transition-colors">Contact</Link>
+            <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
           </div>
           <p className="text-sm text-muted-foreground">
             © 2025 Team Pacheco · All Rights Reserved
