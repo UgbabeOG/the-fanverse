@@ -153,9 +153,9 @@ export default function Home() {
             Become part of the story. Unlock exclusive content, livestream invites, and rewards.
           </p>
           <div className="mt-8">
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="animate-pulse">
               <Link href="/membership">
-                Join Us <Star className="ml-2 h-5 w-5" />
+                Join the Family <Star className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>
