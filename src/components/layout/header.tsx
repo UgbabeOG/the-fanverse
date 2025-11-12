@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/logo";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navLinks = [
   { href: "/", label: "Home", icon: Home },
@@ -97,6 +98,7 @@ export function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
+          <ThemeToggle />
           <div className="hidden md:flex items-center gap-2">
             <Button asChild variant="ghost">
               <Link href="/login">
