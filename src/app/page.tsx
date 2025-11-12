@@ -66,39 +66,49 @@ export default function Home() {
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
             />
           ))}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/20" />
+        {/* subtle vignette */}
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "radial-gradient(ellipse at center, rgba(0,0,0,0.3), rgba(0,0,0,0.6))",
+          }}
+        />
         <div className="relative h-full flex flex-col items-center justify-center text-center text-white p-4">
-          <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg">
-            Welcome to Pacheco Team
-          </h1>
-          <p className="text-2xl md:text-3xl font-headline font-bold text-accent drop-shadow-lg mt-2">
-            Where Passion Meets Purpose.
-          </p>
-          <p className="mt-4 text-lg md:text-xl max-w-2xl drop-shadow-md">
-            The official fan community celebrating Isiah Pacheco’s drive,
-            discipline, and heart. Built for those who believe in the journey,
-            and the fans who make it possible.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <Button
-              asChild
-              size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90"
-            >
-              <Link href="/posts">
-                Latest Highlights <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-slate-300 text-slate-950 hover:bg-slate-500 hover:text-black animate-pulse  dark:text-slate-200 dark:hover:bg-slate-50 dark:hover:text-black"
-            >
-              <Link href="/membership">
-                Join Us <Star className="ml-2 h-5 w-5 " />
-              </Link>
-            </Button>
+          <div className="bg-black/40 backdrop-blur-sm rounded-xl px-6 py-8 max-w-3xl mx-4">
+            <h1 className="text-4xl md:text-6xl font-headline font-bold leading-tight">
+              Welcome to Pacheco Team
+            </h1>
+            <p className="text-2xl md:text-3xl font-headline font-bold text-accent mt-2">
+              Where Passion Meets Purpose.
+            </p>
+            <p className="mt-4 text-lg md:text-xl max-w-2xl text-white/90">
+              The official fan community celebrating Isiah Pacheco’s drive,
+              discipline, and heart. Built for those who believe in the journey,
+              and the fans who make it possible.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+              <Button
+                asChild
+                size="lg"
+                className="bg-accent text-accent-foreground hover:bg-accent/90"
+              >
+                <Link href="/posts">
+                  Latest Highlights <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-slate-300 text-slate-950 hover:bg-slate-500 hover:text-black animate-pulse  dark:text-slate-200 dark:hover:bg-slate-50 dark:hover:text-black"
+              >
+                <Link href="/membership">
+                  Join Us <Star className="ml-2 h-5 w-5 " />
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
