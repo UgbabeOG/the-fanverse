@@ -56,7 +56,7 @@ export const posts: Post[] = [
     slug: "chiefs-vs-commanders-game-recap-fan-raffle-winners",
     content:
       "The star was honored at the annual sports awards last night, looking sharp in a custom suit. This post breaks down the event, the award, and the look.",
-    imageId: "1stlight",
+    imageId: "post-1",
     authorId: "user-1",
     categoryId: "cat-1",
     createdAt: "2024-07-20T10:00:00Z",
@@ -81,8 +81,7 @@ export const posts: Post[] = [
     slug: "training-camp-moments",
     content:
       "An incredible performance in today's derby match secured a crucial victory. We'll break down the key moments, including the game-winning goal. The atmosphere was electric!",
-    // use public/bts.jpg
-    imageId: "bts",
+    imageId: "post-2",
     authorId: "user-2",
     categoryId: "cat-2",
     createdAt: "2024-07-19T15:30:00Z",
@@ -94,8 +93,7 @@ export const posts: Post[] = [
     slug: "tier-1-fan-access-opens-last-week",
     content:
       "Our favorite star is known for their incredible skill on the pitch, but also for their great sense of humor. We've compiled a list of the most hilarious and heartwarming moments from past press conferences. Get ready to laugh!",
-    // use public/tierevent.jpg
-    imageId: "tierevent",
+    imageId: "post-3",
     authorId: "user-1",
     categoryId: "cat-1",
     createdAt: "2024-07-18T09:00:00Z",

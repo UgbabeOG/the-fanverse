@@ -2,38 +2,38 @@
   "placeholderImages": [
     {
       "id": "hero-1",
-      "description": "A vibrant football stadium with a cheering crowd.",
-      "imageUrl": "https://images.unsplash.com/photo-1515523110800-9415d13b84a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb290YmFsbCUyMHN0YWRpdW18ZW58MHx8fHwxNzYxOTgxMTUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "football stadium"
+      "description": "Isiah Pacheco in his Kansas City Chiefs uniform, celebrating on the field.",
+      "imageUrl": "/heroImage.jpg",
+      "imageHint": "football player celebrating"
     },
     {
       "id": "about-celeb",
       "description": "Isiah Pacheco in his Rutgers uniform, making a prayer gesture.",
-      "imageUrl": "https://storage.googleapis.com/aifirebase/images/pacheco-rutgers.jpg",
+      "imageUrl": "/rutgers.jpg",
       "imageHint": "football player"
     },
     {
       "id": "post-1",
-      "description": "Football player receiving an award on stage.",
-      "imageUrl": "https://images.unsplash.com/photo-1614080035039-af24354a6478?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWQlMjBjYXJwZXR8ZW58MHx8fHwxNzYxODE4NDQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "sports award"
+      "description": "Sunrise light over the stadium - 1st light.",
+      "imageUrl": "/1stlight.jpg",
+      "imageHint": "sunrise stadium"
     },
     {
       "id": "post-2",
-      "description": "Football players celebrating a goal in a packed stadium.",
-      "imageUrl": "https://images.unsplash.com/photo-1588198640733-d9345c083427?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmb290YmFsbCUyMGNlbGVicmF0aW9ufGVufDB8fHx8MTc2MjAwNjA0N3ww&ixlibrb-4.1.0&q=80&w=1080",
-      "imageHint": "football celebration"
+      "description": "Behind the scenes training photo.",
+      "imageUrl": "/bts.jpg",
+      "imageHint": "behind the scenes"
     },
     {
       "id": "post-3",
-      "description": "Football player laughing at a press conference.",
-      "imageUrl": "https://images.unsplash.com/photo-1759659334772-c3a05b8178e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjZWxlYnJpdHklMjBpbnRlcnZpZXd8ZW58MHx8fHwxNzYxOTMwMDk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "press conference"
+      "description": "Event photo from the TIE event.",
+      "imageUrl": "/tierevent.jpg",
+      "imageHint": "event"
     },
     {
       "id": "post-4",
       "description": "Football player during an intense training session.",
-      "imageUrl": "/pretraining.jpg",
+      "imageUrl": "/Preseason.jpg",
       "imageHint": "football training"
     },
     {
@@ -41,24 +41,6 @@
       "description": "A collection of fan art drawings of the football player.",
       "imageUrl": "https://images.unsplash.com/photo-1593113598332-cd288d649433?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYW4lMjBhcnR8ZW58MHx8fHwxNzYyMDA2MzIyfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "fan art"
-    },
-    {
-      "id": "1stlight",
-      "description": "Sunrise light over the stadium - 1st light.",
-      "imageUrl": "/1stlight.jpg",
-      "imageHint": "sunrise stadium"
-    },
-    {
-      "id": "bts",
-      "description": "Behind the scenes training photo.",
-      "imageUrl": "/bts.jpg",
-      "imageHint": "behind the scenes"
-    },
-    {
-      "id": "tierevent",
-      "description": "Event photo from the TIE event.",
-      "imageUrl": "/tierevent.jpg",
-      "imageHint": "event"
     },
     {
       "id": "merch-1",
@@ -93,7 +75,7 @@
     {
       "id": "avatar-2",
       "description": "Avatar for user John Smith.",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjE4ODE5NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjE4ODE5NTd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
