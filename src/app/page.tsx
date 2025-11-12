@@ -79,10 +79,10 @@ export default function Home() {
               asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-black animate-pulse"
+              className="border-slate-300 text-slate-950 hover:bg-slate-500 hover:text-black animate-pulse  dark:text-slate-200 dark:hover:bg-slate-50 dark:hover:text-black"
             >
               <Link href="/membership">
-                Join Us <Star className="ml-2 h-5 w-5" />
+                Join Us <Star className="ml-2 h-5 w-5 " />
               </Link>
             </Button>
           </div>
