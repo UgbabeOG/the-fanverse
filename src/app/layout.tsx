@@ -1,15 +1,14 @@
-import type {Metadata} from 'next';
-import './globals.css';
+import type { Metadata } from "next";
+import "./globals.css";
 import { cn } from "@/lib/utils";
-import { Header } from '@/components/layout/header';
-import { Footer } from '@/components/layout/footer';
-import { Toaster } from "@/components/ui/toaster"
-import { ThemeProvider } from '@/components/theme-provider';
-
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
+import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: 'Pacheco Team',
-  description: 'The official fan hub for Pacheco. Join the team!',
+  title: "Pacheco Team",
+  description: "The official fan hub for Pacheco. Join the team!",
 };
 
 export default function RootLayout({
@@ -21,10 +20,23 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
       </head>
-      <body className={cn("min-h-screen bg-background font-body antialiased", "font-body")}>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-body antialiased",
+          "font-body"
+        )}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

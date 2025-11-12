@@ -67,7 +67,8 @@ function RaffleForm() {
           href=" https://docs.google.com/forms/d/e/1FAIpQLSfTZ3csuFYuCu_eHHF1UkHi-RDXoF06RGEmBaMUnQOMtdolww/viewform?usp=sharing&ouid=107997054755209583367 "
           target="_blank"
           rel="form"
-          title="form"
+          title="👉 Please complete your onboarding here:
+"
         >
           Enter Raffle
         </a>
