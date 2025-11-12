@@ -77,11 +77,12 @@ export const posts: Post[] = [
   },
   {
     id: "post-2",
-    title: "Derby Day Victory: A Match to Remember",
-    slug: "derby-day-victory",
+    title: "Behind the Scenes: Training Camp Moments",
+    slug: "training-camp-moments",
     content:
       "An incredible performance in today's derby match secured a crucial victory. We'll break down the key moments, including the game-winning goal. The atmosphere was electric!",
-    imageId: "post-2",
+    // use public/bts.jpg
+    imageId: "bts",
     authorId: "user-2",
     categoryId: "cat-2",
     createdAt: "2024-07-19T15:30:00Z",
