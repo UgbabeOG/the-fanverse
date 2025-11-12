@@ -50,6 +50,7 @@ export default function Home() {
             className="object-cover"
             data-ai-hint={heroImage.imageHint}
             priority
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
           />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -113,6 +114,7 @@ export default function Home() {
                           fill
                           className="object-cover"
                           data-ai-hint={postImage.imageHint}
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         />
                       </div>
                     )}

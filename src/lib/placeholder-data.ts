@@ -1,4 +1,3 @@
-
 export type User = {
   id: string;
   name: string;
@@ -53,23 +52,35 @@ export const categories: Category[] = [
 export const posts: Post[] = [
   {
     id: "post-1",
-    title: "A Night to Remember: Awards Gala Glamour",
-    slug: "awards-gala-glamour",
-    content: "The star was honored at the annual sports awards last night, looking sharp in a custom suit. This post breaks down the event, the award, and the look.",
-    imageId: "post-1",
+    title: "Chiefs vs Commanders: Game Recap & Fan Raffle Winners Announced",
+    slug: "chiefs-vs-commanders-game-recap-fan-raffle-winners",
+    content:
+      "The star was honored at the annual sports awards last night, looking sharp in a custom suit. This post breaks down the event, the award, and the look.",
+    imageId: "1stlight",
     authorId: "user-1",
     categoryId: "cat-1",
     createdAt: "2024-07-20T10:00:00Z",
     comments: [
-      { id: "comment-1", text: "Absolutely well deserved! A true champion.", authorId: "user-2", createdAt: "2024-07-20T11:30:00Z" },
-      { id: "comment-2", text: "Looking sharp! Congrats on the win!", authorId: "user-3", createdAt: "2024-07-20T12:15:00Z" },
+      {
+        id: "comment-1",
+        text: "Absolutely well deserved! A true champion.",
+        authorId: "user-2",
+        createdAt: "2024-07-20T11:30:00Z",
+      },
+      {
+        id: "comment-2",
+        text: "Looking sharp! Congrats on the win!",
+        authorId: "user-3",
+        createdAt: "2024-07-20T12:15:00Z",
+      },
     ],
   },
   {
     id: "post-2",
     title: "Derby Day Victory: A Match to Remember",
     slug: "derby-day-victory",
-    content: "An incredible performance in today's derby match secured a crucial victory. We'll break down the key moments, including the game-winning goal. The atmosphere was electric!",
+    content:
+      "An incredible performance in today's derby match secured a crucial victory. We'll break down the key moments, including the game-winning goal. The atmosphere was electric!",
     imageId: "post-2",
     authorId: "user-2",
     categoryId: "cat-2",
@@ -80,44 +91,85 @@ export const posts: Post[] = [
     id: "post-3",
     title: "Candid Moments: A Look Back at the Funniest Press Conferences",
     slug: "funniest-press-conferences",
-    content: "Our favorite star is known for their incredible skill on the pitch, but also for their great sense of humor. We've compiled a list of the most hilarious and heartwarming moments from past press conferences. Get ready to laugh!",
+    content:
+      "Our favorite star is known for their incredible skill on the pitch, but also for their great sense of humor. We've compiled a list of the most hilarious and heartwarming moments from past press conferences. Get ready to laugh!",
     imageId: "post-3",
     authorId: "user-1",
     categoryId: "cat-1",
     createdAt: "2024-07-18T09:00:00Z",
     comments: [
-      { id: "comment-3", text: "This made my day! The laugh is so infectious.", authorId: "user-3", createdAt: "2024-07-18T10:00:00Z" },
+      {
+        id: "comment-3",
+        text: "This made my day! The laugh is so infectious.",
+        authorId: "user-3",
+        createdAt: "2024-07-18T10:00:00Z",
+      },
     ],
   },
   {
     id: "post-4",
     title: "Pre-Season Prep: Pushing the Limits",
     slug: "pre-season-prep",
-    content: "Ever wondered what a top athlete's pre-season training looks like? We take you behind the scenes of the intense drills and gym sessions. See exclusive photos and learn about the dedication it takes to stay at the top.",
+    content:
+      "Ever wondered what a top athlete's pre-season training looks like? We take you behind the scenes of the intense drills and gym sessions. See exclusive photos and learn about the dedication it takes to stay at the top.",
     imageId: "post-4",
     authorId: "user-3",
     categoryId: "cat-3",
     createdAt: "2024-07-17T18:00:00Z",
     comments: [],
   },
-   {
+  {
     id: "post-5",
     title: "Fan Art Showcase: Our Favorite Creations This Month",
     slug: "fan-art-showcase",
-    content: "The creativity in this community is amazing! We're showcasing some of the best fan art submitted this month. From incredible portraits to hilarious comics, you all are incredibly talented. Keep them coming!",
+    content:
+      "The creativity in this community is amazing! We're showcasing some of the best fan art submitted this month. From incredible portraits to hilarious comics, you all are incredibly talented. Keep them coming!",
     imageId: "post-5",
     authorId: "user-2",
     categoryId: "cat-4",
     createdAt: "2024-07-16T22:00:00Z",
     comments: [
-      { id: "comment-4", text: "So cool to see my drawing featured! Thanks!", authorId: "user-1", createdAt: "2024-07-17T08:00:00Z" },
+      {
+        id: "comment-4",
+        text: "So cool to see my drawing featured! Thanks!",
+        authorId: "user-1",
+        createdAt: "2024-07-17T08:00:00Z",
+      },
     ],
   },
 ];
 
 export const merchandise: Merchandise[] = [
-  { id: "merch-1", name: "Official Home Kit 24/25", price: 90.00, imageId: "merch-1", description: "The official home jersey for the new season. Lightweight, breathable fabric. Available in all sizes." },
-  { id: "merch-2", name: "'FanVerse' Team Scarf", price: 25.00, imageId: "merch-2", description: "Classic knit scarf with team colors and embroidered logo. Perfect for match day." },
-  { id: "merch-3", name: "Limited Edition Signed Photo", price: 75.00, imageId: "merch-3", description: "A high-quality action shot, hand-signed by the star. A true collector's item." },
-  { id: "merch-4", name: "'Goal!' Mug", price: 18.00, imageId: "merch-4", description: "Start your day right with this ceramic mug celebrating a legendary goal." },
+  {
+    id: "merch-1",
+    name: "Official Home Kit 24/25",
+    price: 90.0,
+    imageId: "merch-1",
+    description:
+      "The official home jersey for the new season. Lightweight, breathable fabric. Available in all sizes.",
+  },
+  {
+    id: "merch-2",
+    name: "'FanVerse' Team Scarf",
+    price: 25.0,
+    imageId: "merch-2",
+    description:
+      "Classic knit scarf with team colors and embroidered logo. Perfect for match day.",
+  },
+  {
+    id: "merch-3",
+    name: "Limited Edition Signed Photo",
+    price: 75.0,
+    imageId: "merch-3",
+    description:
+      "A high-quality action shot, hand-signed by the star. A true collector's item.",
+  },
+  {
+    id: "merch-4",
+    name: "'Goal!' Mug",
+    price: 18.0,
+    imageId: "merch-4",
+    description:
+      "Start your day right with this ceramic mug celebrating a legendary goal.",
+  },
 ];

@@ -3,7 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Calendar, User, Tag, MessageSquare, Send, ArrowLeft } from "lucide-react";
+import {
+  Calendar,
+  User,
+  Tag,
+  MessageSquare,
+  Send,
+  ArrowLeft,
+} from "lucide-react";
 import { format } from "date-fns";
 
 import { posts, users, categories } from "@/lib/placeholder-data";
@@ -18,46 +25,50 @@ import { Badge } from "@/components/ui/badge";
 import { SharePost } from "@/components/share-post";
 
 function CommentForm() {
-    const { toast } = useToast();
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        const formData = new FormData(e.currentTarget);
-        const comment = formData.get("comment");
-        if(comment && comment.toString().trim().length > 0) {
-            toast({
-              title: "Comment Submitted",
-              description: "Thank you for your feedback!",
-            });
-            e.currentTarget.reset();
-        } else {
-             toast({
-              title: "Empty Comment",
-              description: "Please write something before submitting.",
-              variant: "destructive"
-            });
-        }
+  const { toast } = useToast();
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const comment = formData.get("comment");
+    if (comment && comment.toString().trim().length > 0) {
+      toast({
+        title: "Comment Submitted",
+        description: "Thank you for your feedback!",
+      });
+      e.currentTarget.reset();
+    } else {
+      toast({
+        title: "Empty Comment",
+        description: "Please write something before submitting.",
+        variant: "destructive",
+      });
     }
-    return (
-        <Card className="mt-8">
-            <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-xl font-headline">
-                    <MessageSquare className="h-6 w-6" />
-                    Leave a Comment
-                </CardTitle>
-            </CardHeader>
-            <CardContent>
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                    <Textarea name="comment" placeholder="Write your comment here..." className="min-h-[120px]" required/>
-                    <Button type="submit" className="self-start">
-                        <Send className="mr-2 h-4 w-4" />
-                        Post Comment
-                    </Button>
-                </form>
-            </CardContent>
-        </Card>
-    );
+  };
+  return (
+    <Card className="mt-8">
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2 text-xl font-headline">
+          <MessageSquare className="h-6 w-6" />
+          Leave a Comment
+        </CardTitle>
+      </CardHeader>
+      <CardContent>
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <Textarea
+            name="comment"
+            placeholder="Write your comment here..."
+            className="min-h-[120px]"
+            required
+          />
+          <Button type="submit" className="self-start">
+            <Send className="mr-2 h-4 w-4" />
+            Post Comment
+          </Button>
+        </form>
+      </CardContent>
+    </Card>
+  );
 }
-
 
 export default function PostPage({ params }: { params: { slug: string } }) {
   const post = posts.find((p) => p.slug === params.slug);
@@ -87,7 +98,9 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             <Badge className="mb-2">{category.name}</Badge>
           </Link>
         )}
-        <h1 className="text-4xl md:text-5xl font-headline font-bold mb-4">{post.title}</h1>
+        <h1 className="text-4xl md:text-5xl font-headline font-bold mb-4">
+          {post.title}
+        </h1>
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
           {author && (
             <div className="flex items-center gap-2">
@@ -97,11 +110,13 @@ export default function PostPage({ params }: { params: { slug: string } }) {
           )}
           <div className="flex items-center gap-2">
             <Calendar className="h-4 w-4" />
-            <time dateTime={post.createdAt}>{format(new Date(post.createdAt), "MMMM d, yyyy")}</time>
+            <time dateTime={post.createdAt}>
+              {format(new Date(post.createdAt), "MMMM d, yyyy")}
+            </time>
           </div>
         </div>
       </header>
-      
+
       {postImage && (
         <div className="relative aspect-video rounded-lg overflow-hidden mb-8 shadow-lg">
           <Image
@@ -111,6 +126,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             className="object-cover"
             data-ai-hint={postImage.imageHint}
             priority
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 75vw, 800px"
           />
         </div>
       )}
@@ -118,7 +134,15 @@ export default function PostPage({ params }: { params: { slug: string } }) {
       <div className="prose prose-lg dark:prose-invert max-w-none leading-relaxed text-foreground">
         <p>{post.content}</p>
         {/* In a real app, this would render markdown or rich text */}
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
       </div>
 
       <SharePost post={post} />
@@ -132,12 +156,22 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         <div className="space-y-6">
           {post.comments.map((comment) => {
             const commentAuthor = users.find((u) => u.id === comment.authorId);
-            const authorImage = commentAuthor ? PlaceHolderImages.find((p) => p.id === commentAuthor.imageId) : null;
+            const authorImage = commentAuthor
+              ? PlaceHolderImages.find((p) => p.id === commentAuthor.imageId)
+              : null;
             return (
               <div key={comment.id} className="flex gap-4">
                 <Avatar>
-                  {authorImage && <AvatarImage src={authorImage.imageUrl} alt={commentAuthor?.name} data-ai-hint={authorImage.imageHint}/>}
-                  <AvatarFallback>{commentAuthor?.name.charAt(0)}</AvatarFallback>
+                  {authorImage && (
+                    <AvatarImage
+                      src={authorImage.imageUrl}
+                      alt={commentAuthor?.name}
+                      data-ai-hint={authorImage.imageHint}
+                    />
+                  )}
+                  <AvatarFallback>
+                    {commentAuthor?.name.charAt(0)}
+                  </AvatarFallback>
                 </Avatar>
                 <div className="flex-1">
                   <div className="flex items-center justify-between">
@@ -152,9 +186,9 @@ export default function PostPage({ params }: { params: { slug: string } }) {
             );
           })}
         </div>
-        
+
         {post.comments.length === 0 && (
-            <p className="text-muted-foreground">Be the first to comment!</p>
+          <p className="text-muted-foreground">Be the first to comment!</p>
         )}
 
         <CommentForm />
