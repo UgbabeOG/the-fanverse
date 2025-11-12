@@ -90,8 +90,8 @@ export const posts: Post[] = [
   },
   {
     id: "post-3",
-    title: "Candid Moments: A Look Back at the Funniest Press Conferences",
-    slug: "funniest-press-conferences",
+    title: "Exclusive Drop: Tier 1 Fan Access Opens Next Week",
+    slug: "tier-1-fan-access-opens-next-week",
     content:
       "Our favorite star is known for their incredible skill on the pitch, but also for their great sense of humor. We've compiled a list of the most hilarious and heartwarming moments from past press conferences. Get ready to laugh!",
     // use public/tierevent.jpg
