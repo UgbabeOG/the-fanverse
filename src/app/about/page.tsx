@@ -36,7 +36,7 @@ export default function AboutPage() {
           {aboutImage && (
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-2xl">
               <Image
-                src={aboutImage.imageUrl}
+                src="/rutgers.jpg"
                 alt={aboutImage.description}
                 fill
                 className="object-cover"

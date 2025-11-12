@@ -44,7 +44,7 @@ export default function Home() {
       <section className="relative w-full h-[60vh] md:h-[70vh]">
         {heroImage && (
           <Image
-            src={heroImage.imageUrl}
+            src="/heroImage.jpg"
             alt={heroImage.description}
             fill
             className="object-cover"
