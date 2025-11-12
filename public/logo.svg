@@ -1,0 +1,30 @@
+<svg
+  width="150"
+  height="40"
+  viewBox="0 0 150 40"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <style>
+      .pacheco-text {
+        font-family: Montserrat, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: hsl(var(--primary));
+      }
+      .team-text {
+        font-family: Montserrat, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: hsl(var(--secondary));
+      }
+    </style>
+  </defs>
+  <rect width="150" height="40" fill="transparent" />
+  <text x="10" y="28" class="pacheco-text">
+    PACHECO
+  </text>
+  <text x="100" y="28" class="team-text">
+    TEAM
+  </text>
+</svg>

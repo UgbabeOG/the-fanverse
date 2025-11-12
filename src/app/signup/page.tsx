@@ -55,7 +55,7 @@ export default function SignupPage() {
     console.log(values);
     toast({
       title: "Account Created!",
-      description: "Welcome to FanVerse! You can now log in.",
+      description: "Welcome to Pacheco Team! You can now log in.",
     });
     form.reset();
   }
@@ -64,7 +64,7 @@ export default function SignupPage() {
     <div className="container mx-auto flex min-h-[80vh] items-center justify-center px-4 py-12 md:py-20">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <CardTitle className="text-3xl font-headline">Join FanVerse</CardTitle>
+          <CardTitle className="text-3xl font-headline">Join the Team</CardTitle>
           <CardDescription>Create an account to join the community.</CardDescription>
         </CardHeader>
         <CardContent>

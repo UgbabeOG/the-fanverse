@@ -1,21 +1,22 @@
-
-
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, Newspaper, Home, Info, ShoppingBag, LogIn, UserPlus } from "lucide-react";
+import { Menu, Newspaper, Home, Info, ShoppingBag, LogIn, UserPlus, Star, Mail } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/logo";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navLinks = [
   { href: "/", label: "Home", icon: Home },
-  { href: "/posts", label: "Posts", icon: Newspaper },
+  { href: "/posts", label: "Highlights", icon: Newspaper },
   { href: "/merchandise", label: "Merchandise", icon: ShoppingBag },
+  { href: "/membership", label: "Membership", icon: Star },
   { href: "/about", label: "About", icon: Info },
+  { href: "/contact", label: "Contact", icon: Mail },
 ];
 
 export function Header() {
@@ -54,7 +55,9 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left">
-              <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+              <SheetClose asChild>
+                <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+              </SheetClose>
               <div className="flex flex-col h-full">
                 <div className="border-b pb-4">
                   <Link href="/" className="flex items-center space-x-2">
@@ -95,6 +98,7 @@ export function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
+          <ThemeToggle />
           <div className="hidden md:flex items-center gap-2">
             <Button asChild variant="ghost">
               <Link href="/login">

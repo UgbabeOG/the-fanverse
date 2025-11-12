@@ -76,7 +76,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         <Button asChild variant="ghost">
           <Link href="/posts">
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Posts
+            Back to Highlights
           </Link>
         </Button>
       </div>

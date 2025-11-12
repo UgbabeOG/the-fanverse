@@ -51,7 +51,7 @@ export default function LoginPage() {
     console.log(values);
     toast({
       title: "Login Successful",
-      description: "Welcome back to FanVerse!",
+      description: "Welcome back to Pacheco Team!",
     });
     form.reset();
   }
@@ -61,7 +61,7 @@ export default function LoginPage() {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-headline">Welcome Back!</CardTitle>
-          <CardDescription>Log in to your FanVerse account.</CardDescription>
+          <CardDescription>Log in to your Pacheco Team account.</CardDescription>
         </CardHeader>
         <CardContent>
           <Form {...form}>

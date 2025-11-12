@@ -8,8 +8,8 @@
     },
     {
       "id": "about-celeb",
-      "description": "A professional portrait of the football player.",
-      "imageUrl": "https://images.unsplash.com/photo-1544299991-3f1a04917f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbCUyMHBsYXllciUyMHBvcnRyYWl0fGVufDB8fHx8MTc2MjAwNTU4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Isiah Pacheco in his Rutgers uniform, making a prayer gesture.",
+      "imageUrl": "https://storage.googleapis.com/aifirebase/images/pacheco-rutgers.jpg",
       "imageHint": "football player"
     },
     {
