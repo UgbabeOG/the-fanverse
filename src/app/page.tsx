@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { buildSrcSet } from "@/lib/utils";
 import Link from "next/link";
 import { ArrowRight, Star, KeyRound, Gift, Crown } from "lucide-react";
 
@@ -42,17 +43,29 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <section className="relative w-full h-[60vh] md:h-[70vh]">
-        {heroImage && (
-          <Image
-            src="/heroImage.jpg"
-            alt={heroImage.description}
-            fill
-            className="object-cover"
-            data-ai-hint={heroImage.imageHint}
-            priority
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
-          />
-        )}
+        {heroImage &&
+          (heroImage.imageUrl && heroImage.imageUrl.startsWith("/") ? (
+            <picture>
+              <source srcSet={buildSrcSet(heroImage.imageUrl)} />
+              <img
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                className="object-cover w-full h-full absolute inset-0"
+                data-ai-hint={heroImage.imageHint}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </picture>
+          ) : (
+            <Image
+              src="/heroImage.jpg"
+              alt={heroImage.description}
+              fill
+              className="object-cover"
+              data-ai-hint={heroImage.imageHint}
+              priority
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
+            />
+          ))}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         <div className="relative h-full flex flex-col items-center justify-center text-center text-white p-4">
           <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg">

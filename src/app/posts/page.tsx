@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { buildSrcSet } from "@/lib/utils";
 import Link from "next/link";
 import { ArrowRight, Newspaper } from "lucide-react";
 
@@ -70,16 +71,33 @@ export default function PostsPage() {
               >
                 <CardHeader className="p-0">
                   <div className="aspect-video relative">
-                    {postImage && (
-                      <Image
-                        src={postImage.imageUrl}
-                        alt={post.title}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={postImage.imageHint}
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
-                    )}
+                    {postImage &&
+                      (postImage.imageUrl &&
+                      postImage.imageUrl.startsWith("/") ? (
+                        <picture>
+                          <source srcSet={buildSrcSet(postImage.imageUrl)} />
+                          <img
+                            src={postImage.imageUrl}
+                            alt={post.title}
+                            className="object-cover w-full h-full absolute inset-0"
+                            data-ai-hint={postImage.imageHint}
+                            style={{
+                              width: "100%",
+                              height: "100%",
+                              objectFit: "cover",
+                            }}
+                          />
+                        </picture>
+                      ) : (
+                        <Image
+                          src={postImage.imageUrl}
+                          alt={post.title}
+                          fill
+                          className="object-cover"
+                          data-ai-hint={postImage.imageHint}
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
+                      ))}
                     {category && (
                       <Badge className="absolute top-4 right-4">
                         {category.name}

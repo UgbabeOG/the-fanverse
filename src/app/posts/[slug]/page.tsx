@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { buildSrcSet } from "@/lib/utils";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -119,15 +120,28 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
       {postImage && (
         <div className="relative aspect-video rounded-lg overflow-hidden mb-8 shadow-lg">
-          <Image
-            src={postImage.imageUrl}
-            alt={post.title}
-            fill
-            className="object-cover"
-            data-ai-hint={postImage.imageHint}
-            priority
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 75vw, 800px"
-          />
+          {postImage.imageUrl && postImage.imageUrl.startsWith("/") ? (
+            <picture>
+              <source srcSet={buildSrcSet(postImage.imageUrl)} />
+              <img
+                src={postImage.imageUrl}
+                alt={post.title}
+                className="object-cover w-full h-full absolute inset-0"
+                data-ai-hint={postImage.imageHint}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </picture>
+          ) : (
+            <Image
+              src={postImage.imageUrl}
+              alt={post.title}
+              fill
+              className="object-cover"
+              data-ai-hint={postImage.imageHint}
+              priority
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 75vw, 800px"
+            />
+          )}
         </div>
       )}
 
