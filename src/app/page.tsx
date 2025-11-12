@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Star, KeyRound, Gift, Crown } from "lucide-react";
@@ -23,17 +22,20 @@ export default function Home() {
     {
       icon: <KeyRound className="h-10 w-10 text-primary" />,
       title: "Exclusive Access",
-      description: "Unlock members-only content, Q&As, and behind-the-scenes footage.",
+      description:
+        "Unlock members-only content, Q&As, and behind-the-scenes footages.",
     },
     {
       icon: <Gift className="h-10 w-10 text-primary" />,
       title: "Giveaways",
-      description: "Enter to win tickets, signed memorabilia, and unique fan experiences.",
+      description:
+        "Enter to win tickets, signed memorabilia, and unique fan experiences.",
     },
     {
       icon: <Crown className="h-10 w-10 text-primary" />,
       title: "Inner Circle",
-      description: "Get priority access to new merchandise drops and special announcements.",
+      description:
+        "Get priority access to new merchandise drops and special announcements.",
     },
   ];
 
@@ -59,15 +61,26 @@ export default function Home() {
             Where Passion Meets Purpose.
           </p>
           <p className="mt-4 text-lg md:text-xl max-w-2xl drop-shadow-md">
-            The official fan community celebrating Isiah Pacheco’s drive, discipline, and heart. Built for those who believe in the journey, and the fans who make it possible.
+            The official fan community celebrating Isiah Pacheco’s drive,
+            discipline, and heart. Built for those who believe in the journey,
+            and the fans who make it possible.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button
+              asChild
+              size="lg"
+              className="bg-accent text-accent-foreground hover:bg-accent/90"
+            >
               <Link href="/posts">
                 Latest Highlights <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black animate-pulse">
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-black animate-pulse"
+            >
               <Link href="/membership">
                 Join Us <Star className="ml-2 h-5 w-5" />
               </Link>
@@ -138,7 +151,9 @@ export default function Home() {
 
       <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4 text-center">
-           <h2 className="text-3xl md:text-4xl font-headline font-bold">Fan Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-headline font-bold">
+            Fan Experience
+          </h2>
           <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
             Connect. Celebrate. Win.
           </p>
@@ -147,15 +162,15 @@ export default function Home() {
               <div key={feature.title} className="flex flex-col items-center">
                 {feature.icon}
                 <h3 className="mt-4 text-xl font-bold">{feature.title}</h3>
-                <p className="mt-2 text-muted-foreground">{feature.description}</p>
+                <p className="mt-2 text-muted-foreground">
+                  {feature.description}
+                </p>
               </div>
             ))}
           </div>
           <div className="mt-12">
             <Button asChild size="lg" className="animate-pulse">
-              <Link href="/membership">
-                Join the Community
-              </Link>
+              <Link href="/membership">Join the Community</Link>
             </Button>
           </div>
         </div>
@@ -167,7 +182,8 @@ export default function Home() {
             Join the Family.
           </h2>
           <p className="mt-2 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Become part of the story. Unlock exclusive content, livestream invites, and rewards.
+            Become part of the story. Unlock exclusive content, livestream
+            invites, and rewards.
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="animate-pulse">
