@@ -94,7 +94,8 @@ export const posts: Post[] = [
     slug: "funniest-press-conferences",
     content:
       "Our favorite star is known for their incredible skill on the pitch, but also for their great sense of humor. We've compiled a list of the most hilarious and heartwarming moments from past press conferences. Get ready to laugh!",
-    imageId: "post-3",
+    // use public/tierevent.jpg
+    imageId: "tierevent",
     authorId: "user-1",
     categoryId: "cat-1",
     createdAt: "2024-07-18T09:00:00Z",
