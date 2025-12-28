@@ -78,7 +78,7 @@ export default function Home() {
         <div className="relative h-full flex flex-col items-center justify-center text-center text-white p-4">
           <div className="bg-black/40 backdrop-blur-sm rounded-xl px-6 py-8 max-w-3xl mx-4">
             <h1 className="text-4xl md:text-6xl font-headline font-bold leading-tight">
-              Welcome to Pacheco Team
+              Welcome to Team Pacheco
             </h1>
             <p className="text-2xl md:text-3xl font-headline font-bold text-accent mt-2">
               Where Passion Meets Purpose.

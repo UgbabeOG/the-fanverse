@@ -45,7 +45,7 @@ export default function ContactPage() {
             <CardContent className="space-y-4">
               <div className="flex items-center gap-4">
                 <Mail className="h-6 w-6 text-primary" />
-                <a href="mailto:info@pachecofans.com" className="hover:underline">info@pachecofans.com</a>
+                <a href="mailto:Info@pachecofans.com" className="hover:underline">Info@pachecofans.com</a>
               </div>
               <div className="flex items-center gap-4 animate-pulse">
                 <WhatsAppIcon className="h-6 w-6 text-primary" />

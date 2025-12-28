@@ -15,7 +15,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { Separator } from "@/components/ui/separator";
 
-const managementEmail = "info@pachecofans.com";
+const managementEmail = "Info@pachecofans.com";
 const emailSubject = "Inquiry: Trust Access Pass Membership";
 const emailBody =
   "Hello, I am interested in joining the Trust Access Pass. Please provide me with the next steps to complete my membership.";

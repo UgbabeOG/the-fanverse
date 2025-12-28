@@ -1,4 +1,4 @@
-# Pacheco Team Fan Hub
+# Team Pacheco Fan Hub
 
 This is the official fan community for Isiah Pacheco, built with Next.js and Firebase Studio.
 
