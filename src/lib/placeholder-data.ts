@@ -1,3 +1,4 @@
+
 export type User = {
   id: string;
   name: string;
@@ -37,9 +38,9 @@ export type Merchandise = {
 };
 
 export const users: User[] = [
-  { id: "user-1", name: "Jane Doe", imageId: "avatar-1" },
-  { id: "user-2", name: "John Smith", imageId: "avatar-2" },
-  { id: "user-3", name: "Alex Ray", imageId: "avatar-3" },
+  { id: "user-1", name: "Damien Louis", imageId: "avatar-1" },
+  { id: "user-2", name: "Sarah Miller", imageId: "avatar-2" },
+  { id: "user-3", name: "Chris Johnson", imageId: "avatar-3" },
 ];
 
 export const categories: Category[] = [
